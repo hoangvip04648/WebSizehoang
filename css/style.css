@@ -1,0 +1,407 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin : 0;
+    height:2000px;
+    background: gray;
+}
+.header{
+    width: 100%;
+    background: burlywood;
+    position: absolute;
+    z-index: 1000;
+    animation: all 0.5s ease;
+}
+
+.containers{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.title{
+    width: 47%;
+    height: 33px;
+   
+}
+.searchform{
+    width: 80%;
+    height: 100%;
+}
+.searchform input{
+    width: 60%;
+    padding: 8px;
+    margin-left: 5px;
+    border-radius: 99px;
+    outline-style: none;
+    border: 1px solid black;
+    float: left;
+}
+.searchform i{
+    float: left;
+    margin: 8px -30px;
+}
+
+.header .basket{
+    font-size: 20px;
+    padding: 10px;
+    height: 33px;
+    width: 40%;
+    text-align: right;
+}
+
+
+
+
+.menu{
+    padding: 0 15px;
+    background: black;
+    height: 39px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.containers.mobile{
+    display: none;
+}
+.menu .list {
+    width: 67%;
+}
+.menu .list ul{
+    margin:0;
+    padding: 0;
+}
+.menu .list li{
+    display: inline-block;
+    list-style: none;
+    padding: 7.5px;
+}
+.menu .list a{
+    text-decoration: none;
+    color:white;
+}
+.menu .list .sub-tapchi{
+    text-align: center;
+    width: 60%;
+    top:105px;
+    left:287px;
+    opacity: 0;
+}
+.menu .list .sub-cuahang{
+    text-align: center;
+    width: 15%;
+    top:105px;
+    opacity: 0;
+}
+.menu .list .sub{
+    overflow: auto;
+    position: absolute;
+    border: 2px solid gray;
+    border-radius: 20px;
+    z-index: 10000;
+    background:white;
+    font-size: 12.8px;
+    height: 0;
+}
+.menu .list ul li:hover .sub-cuahang{
+    opacity: 1;
+    height: auto;
+    padding: 10px;
+}
+.menu .list ul li:hover .sub-tapchi{
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
+.menu .list .sub-tapchi .item{
+    margin: 10px;
+    width: 22%;
+    float: left;
+}
+.menu .list p,strong{
+    color: black;
+}
+
+.link-detail{
+    max-height: 39px;
+}
+.link-detail a{
+    text-decoration: none;
+}
+.link-detail ul{
+    margin: 0;
+    padding: 0;
+    padding:3.5px;
+}
+.link-detail li{
+    display: inline-block;
+    list-style: none;
+    padding:2px;
+    border:2px solid white;
+    border-radius: 99px;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+}
+.link-detail li i {
+    font-size: 20px;
+    color:white;
+}
+.menu .item{
+    display:block;
+    color:white;
+}
+
+
+.menu-mobile{
+    width: 100%;
+    height: 0;
+}
+.left-menu{
+    width: 60%;
+    float: left;
+}
+.right-menu{
+    float:left;
+    text-align: right;
+    padding: 10px;
+    width: 30%;
+    background: none;
+}   
+.bars{
+    display: none;
+}
+.header-mobile .icon-menu-mobile{
+    width: 40%;
+    font-size: 30px;
+}
+.menu-mobile .list-menu-mobile li{
+    padding: 5px;
+    list-style: none;
+    margin: 10px;
+}
+/* .menu .tapchiItems{
+    display: none;
+    width: 400px;
+    height:300px;
+    background: white;
+    position: relative;
+    z-index: 999;
+} */
+.item-menu-mobile.tapchi{
+    overflow: hidden;
+    height: 0;
+}
+.item-menu-mobile.tapchi p{
+    margin  :0;
+}
+.item-menu-mobile.cuahang{
+    overflow: hidden;
+    height:0;
+}
+
+.content{
+    position: relative;
+    top:104px;
+}
+/* content */
+.wrap-slide{
+    padding: 10px 0 0 0;
+}
+.wrap-slide .baner{
+    display: none;
+}
+.container .row .baner img,.container .row .baner- img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container .row  .button-pre{
+    position: absolute;
+    top :200px;
+    left:4%;
+}
+.container .row .button-next{
+    position: absolute;
+    top :200px;
+    right:4%;
+}
+.col-md-8.col-sm-12:hover .button-next{
+    display:block;
+}
+
+.container .row .dots-slide{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+.container .row .dot{
+    display: inline-block;
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #111;
+    opacity: 0.5;
+    cursor: pointer;
+    transition:all 0.3;
+    border-radius: 50%;
+}
+.row .button-next,.row .button-pre{
+    opacity: 0.4;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: none;
+}
+.row .button-pre i,.row .button-next i{
+    font-size: 200%;
+}
+.row .col-md-8.col-sm-12:hover .button-next,.row .col-md-8.col-sm-12:hover .button-pre{
+    display: block;
+}
+
+.img-tapchi{
+    width: 50%;
+    float: left;
+    margin: 20px;
+}
+
+
+/* duoi slide */
+.row .items-cross{
+    text-align: center;
+}
+
+.row .items-cross a{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 13px;
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1px;
+}
+.button-pre-product{
+    position: absolute;
+    height: 100%;
+    left:0%;
+    opacity: 0;
+    border: none;
+    top: 0;
+}
+
+
+
+.button-next-product{
+    position: absolute;
+    height: 100%;
+    right: 0%;
+    opacity: 0;
+    border: none;
+    top: 0;
+}
+.wrap-detail{
+    transition: all 1s;
+    width: 100%;
+    height:100%;position: absolute;
+    transform: translateX(-100%);
+}
+.wrap{
+    position: relative; 
+    overflow: hidden;
+}
+.baner-:hover .button-pre-product{
+    outline: none;
+    transition: all 0.3s;;
+    opacity: 0.4;
+    box-shadow:10px 0px 15px rgba(0,0,0,0.3);
+}
+.baner-:hover .button-next-product{
+    outline: none;
+    transition: all 0.3s;;
+    opacity: 0.4;
+    box-shadow:-10px 0px 15px rgba(0,0,0,0.3);
+}
+.wrap-{
+    height: 275px;
+}
+
+
+
+.xemthem{
+    color: white;
+    background: red;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.content a{
+    color:black!important;
+    text-decoration: none!important;
+}
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    background: gray;
+    position: absolute;
+    padding: 15px;
+    margin-top: 150px;
+}
+.footer .icon-paymen{
+    margin:0 auto;
+    width:80%;
+    text-align:center;
+}
+.footer li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer .link-page{
+    text-align:center;
+}
+.footer .adddress{
+    text-align:center;
+}
+.fixed{
+    position: fixed;
+}
+.border{
+    border:1px solid black;
+}
+.clearfix{
+    content: "";
+    display: block;
+}
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: right;
+}
+
+
+
+.fixed{
+    position: fixed;
+}
+.border{
+    border:1px solid black;
+}
+.clearfix{
+    content: "";
+    display: block;
+}
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: right;
+}
