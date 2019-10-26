@@ -1,0 +1,7 @@
+linkdetail : https://api.myjson.com/bins/evtlo 
+	
+link1:https://api.myjson.com/bins/a02fw
+link2:https://api.myjson.com/bins/b6xng
+link3:https://api.myjson.com/bins/11e09o
+link4:https://api.myjson.com/bins/10bfdo
+link5:https://api.myjson.com/bins/756qk

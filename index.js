@@ -370,3 +370,122 @@ $(document).ready(function(){
 });
 
 
+// detail
+
+
+
+// ajax
+
+// var listObject = [];
+
+// for(var i = 0 ; i< 5; i++){
+//   listObject.push( document.getElementsByClassName('product')[i]);
+// }
+
+
+// function getData( listObject ){
+//   $.ajax({
+//     url : "https://api.myjson.com/bins/cjjf4",
+//     method : "GET", 
+//     dataType : "json",
+//     success : function(res){
+//       // render(res);
+//       console.log(res);
+//     },
+//     error: function(err){
+//       console.log(err);
+//     }
+//   })
+// }
+
+// function getData() {
+//   $.ajax({
+//     url: 'https://api.myjson.com/bins/cjjf4',
+//     method: 'GET',
+//     success: function(res) {
+//      render(res);
+//     },
+//     error : function(err) {
+//       alert("Can't get data !");
+//       console.log(err);
+//     }
+//   })
+// }
+
+// $(document).ready(function(){
+//   getData()
+// })
+
+function render(data){
+  var html="";
+  for(var i = 0;i<data.length ; i++){
+    var flag=i*20;
+    html += 
+              `<div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:${flag}%">
+                <div >
+                    <div>
+                        <img src="${data[i].source}" id="${data[i].id}">
+                    </div>
+                </div>
+                <div >
+                  <div class="col-12" style="text-align: center">
+                      <span>RICHNESS</span>
+                      <p>Tshirt</p>
+                      <strong>${data[i].price}.000</strong>
+                  </div>  
+                </div>
+              </div>`
+  }
+  $('.wrap-detail').prepend(html);
+}
+
+
+
+
+function detailhtml() {
+  $('.container').remove();
+  $.ajax({
+    url :"https://api.myjson.com/bins/12hp4k",
+    method : "GET",
+    dataType : 'json',  
+    success : function(res){
+      //render ra giao dien list product
+
+      var html = 
+      `<section class="content" style="top:10px!important">
+        <div class="container">
+          <div class="row listproduct">`;
+      for(var i=0 ; i < res.length; i++){
+        html += 
+        `<div class="col-6 col-xs-6 col-sm-3 col-lg-2 product" >
+            <div class="row">
+              <a class="img000" href="./detailProduct.html">
+                <img src="${res[i].source}" id="${res[i].id}" >
+              </a>
+            </div>
+          <div >
+            <div class="col-12" style="text-align: center">
+                <span>RICHNESS</span>
+                <p>Tshirt</p>
+                <strong>${res[i].price}.000</strong>
+            </div>  
+          </div>
+        </div>`
+      }
+      html+=
+          `</div>
+          </div>
+          </section>`;
+      $('.content').prepend(html);
+    },
+    error : function(err){
+      console.log(err);
+    }
+  })
+}
+
+function showdetail(data){
+
+}
+
+

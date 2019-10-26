@@ -1,4 +1,4 @@
-@media (max-width: 850px) {
+@media (max-width: 991px) {
     .containers.destop,.menu{
         display: none;
     }
@@ -71,6 +71,7 @@
         padding: 6px;
     }
 }
+
 @media(max-width :576px){
     .img-tapchi{
         float: none;
@@ -80,6 +81,12 @@
     
     .button-pre,.button-next{
         top:90px !important;
+    }
+    .slide-small-detail{
+        display: none;
+    }
+    .note{
+        display: none;
     }
 }
 @media(max-width:991px) and  (min-width : 576px){
@@ -92,4 +99,13 @@
         height: 100%;
     }
 }
-
+@media(max-width:320px){
+    h2{
+        max-width:80%;
+    }
+}
+@media(max-width:768px){
+    .note{
+        display: none;
+    }
+}

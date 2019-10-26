@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LÊ VĂN HOÀNG</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css//responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <!-- top -->
+    <section class="header" id="header">
+        <div class="containers destop">
+            <!-- form search -->
+            <div class="title">
+                <form method="GET" class="searchform">
+                    <input type="text" placeholder="Search" style="height:100%">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+            <!-- image -->
+            <a href="./index.html"><img src="./images/croostech.png" style="width:65px"></a>
+            <!-- giỏ hàng -->
+            <div class="basket">
+                <span>LOGIN / REGISTER</span>
+                <a href="./cart.html"  style="color: black;">
+                 <i class="fas fa-shopping-cart" ></i>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#">TẠP CHÍ <i class="fas fa-angle-down"></i></a>
+                        <div class="sub-tapchi sub">
+                            <div class="item">
+                                <strong>THỜI TRANG</strong>
+                                <hr>
+                                <P>TIN TỨC THỜI TRANG</P>
+                                <hr>
+                                <p>PHONG CÁCH</p>
+                                <hr>
+                                <p>STYLE SNAP</p>
+                                <hr>
+                                <p>STREET SNAP</p>
+
+                            </div>
+                            <div class="item">
+                                <strong>SNEAKER</strong>
+                                <hr>
+                                <p>TIN TỨC SNEAKER</p>
+                            </div>
+                            <div class="item">
+                                <strong>VĂN HÓA</strong>
+                                <hr>
+                                <p>CỘNG ĐỒNG</p>
+                                <hr>
+                                <p>SỰ KIỆN</p>
+                                <hr>
+                                <p>GIẢI TRÍ</p>
+                            </div>
+                            <div class="item">
+                                <strong>NHÃN HÀNG</strong>
+                                <hr>
+                                <p>TIN TỨC </p>
+                                <hr>
+                                <p>SẢN PHẨM </p>
+                                <hr>
+                                <p>COLLAB</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">HÀNG MỚI VỀ</a>
+                    </li>
+                    <li>
+                        <a href="#">CỬA HÀNG <i class="fas fa-angle-down"></i></a>
+                        <div class="sub-cuahang sub">
+                            <div class="item">
+                                <p>ÁO KHOÁC</p>
+                                <hr>
+                                <p>ÁO</p>
+                                <hr>
+                                <p>QUẦN</p>
+                                <hr>
+                                <p>GIÀY</p>
+                                <hr>
+                                <p>PHỤ KIỆN</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">THƯƠNG HIỆU</a>
+                    </li>
+                    <li>
+                        <a href="#">GIẢM GIÁ</a>
+                    </li>
+                    <li>
+                        <a href="#">BÁN CHẠY</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link-detail">
+                <ul>
+                    <li><a href="https://www.facebook.com/DirtyCoins.VN/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/explore/tags/dosiin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC6FrTFO8C7ssNu-1FM3VlZg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="mailto:levanhoang310799@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="containers mobile">
+                <div class="icon-menu-mobile">
+                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                </div>
+                <a href=""><img src="./images/croostech.png" style="width:65px"></a>
+                <div class="basket"  >
+                    <a href="./cart.html" style="color: black">
+                     <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+                <div class="menu-mobile">
+                    <!-- dat chieu cao cho wrap bao boc  -->
+                    <div style="height: calc(100vh - 110px)">
+                        <div class="left-menu">
+                            <form method="GET" class="searchform">
+                                <input type="text" placeholder="Search">
+                                <i class="fas fa-search"></i>
+                            </form>
+                            <div class="list-menu-mobile">
+                                <ul style="padding: 0">
+                                    <li>
+                                        <div>
+                                            <div style="width: 80%;display:inline-block;text-align:left;"><strong>TẠP
+                                                    CHÍ </strong></div>
+                                            <i class="fas fa-angle-down" onclick="toggleMobileMenu()"></i>
+                                            <div class="item-menu-mobile tapchi">
+                                                <strong>THỜI TRANG</strong>
+                                                <div style="padding:15px;">
+                                                    <p>TIN TỨC THỜI TRANG</p>
+                                                    <hr>
+                                                    <p>PHONG CÁCH</p>
+                                                    <hr>
+                                                    <p>STYLE SNAP</p>
+                                                    <hr>
+                                                    <p>STREET SNAP</p>
+                                                </div>
+                                                <strong>SNEAKER</strong>
+                                                <div style="padding:15px;">
+                                                    <p>TIN TỨC SNEAKER</p>
+                                                </div>
+                                                <strong>VĂN HÓA</strong>
+                                                <div style="padding:15px;">
+                                                    <p>CỘNG ĐỒNG</p>
+                                                    <hr>
+                                                    <p>SỰ KIỆN</p>
+                                                    <hr>
+                                                    <p>GIẢI TRÍ</p>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div style="width: 80%;display:inline-block;text-align:left;">
+                                                <strong>HÀNG MỚI VỀ </strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong> CỬA HÀNG </strong>
+                                        </div>
+                                        <i class="fas fa-angle-down" onclick="toggleMobileMenu1()"></i>
+                                        <div class="item-menu-mobile cuahang">
+                                            <div style="padding:15px;">
+                                                <p>ÁO KHOÁC</p>
+                                                <hr>
+                                                <p>ÁO</p>
+                                                <hr>
+                                                <p>QUẦN</p>
+                                                <hr>
+                                                <p>GIÀY</p>
+                                                <hr>
+                                                <p>PHỤ KIỆN</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong>THƯƠNG HIỆU</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong>GIẢM GIÁ</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong>BÁN CHẠY</strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-menu">
+                            <button style="font-size:20px;color:black;" onclick="closemenumobile()"><i
+                                    class="fas fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="link-detail"
+                        style="background: black;text-align: center;margin-bottom: 40px;clear: both;">
+                        <ul>
+                            <li><a href="https://www.facebook.com/DirtyCoins.VN/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/explore/tags/dosiin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC6FrTFO8C7ssNu-1FM3VlZg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="mailto:levanhoang310799@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content -->
+    <section class="content" style="top:150px !important">
+        <div class="container-fluid">
+            <div class="row listproduct">
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('a02fw')">
+                            <img src="./images/detail/1/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('b6xng')">
+                            <img src="./images/detail/2/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('11e09o')">
+                            <img src="./images/detail/3/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('10bfdo')">
+                            <img src="./images/detail/4/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                        <div class="row">
+                            <a class="img000" onclick="detail('756qk')">
+                                <img src="./images/detail/5/1.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="col-12" style="text-align: center">
+                                <span>RICHNESS</span>
+                                <p>Tshirt</p>
+                                <strong>100.000</strong>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('a02fw')">
+                            <img src="./images/detail/1/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('b6xng')">
+                            <img src="./images/detail/2/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('11e09o')">
+                            <img src="./images/detail/3/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('10bfdo')">
+                            <img src="./images/detail/4/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('756qk')">
+                            <img src="./images/detail/5/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('a02fw')">
+                            <img src="./images/detail/1/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-3 col-lg-2 product">
+                    <div class="row">
+                        <a class="img000" onclick="detail('b6xng')">
+                            <img src="./images/detail/2/1.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="col-12" style="text-align: center">
+                            <span>RICHNESS</span>
+                            <p>Tshirt</p>
+                            <strong>100.000</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footter -->
+    <section class="footer">
+        <div class="icon-paymen">
+            <i class="fab fa-cc-visa" style="font-size: 40px;"></i>
+            <i class="fab fa-cc-mastercard" style="font-size: 40px;"></i>
+        </div>
+        <div class="link-page">
+            <ul>
+                <li>VỀ CHÚNG TÔI</li>
+                <li>CHÍNH SÁCH MUA HÀNG</li>
+                <li>BÁN HÀNG CÙNG DOSSIIN</li>
+            </ul>
+        </div>
+        <div class="adddress">
+            <p>Copyright 2019 © <strong style="font-size: 20.8px">Dosi-in.com</strong> | Designed by KLOZEUP</p>
+            <br>
+            <p>· Công Ty: CÔNG TY TNHH DOSIIN</p>
+            <br>
+            · <strong>Trụ sở chính : 76 Nguyễn Trường Tộ, P12, Q4, TPHCM.</strong>
+            · <strong>Điện thoại : 0939 950 353</strong>
+            · <strong>Mã số thuế : 0314119937</strong>
+        </div>
+        </div>
+    </section>
+    <script>
+        function clickImg(id){
+            document.getElementById('img').src=id;
+        }
+
+        function changeInput(){
+            if( parseInt($('#number-product').val()) < 1 || (parseInt($('#number-product').val()).toString() !==  $('#number-product').val()  ))
+            {
+                alert("Số lượng không thể nhỏ hơn 1 và không thể là chữ.");
+                $('#number-product').val(1);
+            }
+        }
+        function down(){
+            if(parseInt($('#number-product').val()) < 2)
+            {
+                alert("Số lượng không thể nhỏ hơn 1");
+            }
+            else{
+                $('#number-product').val((parseInt( $('#number-product').val())-1).toString());
+            }
+        }
+        function up(){
+            $('#number-product').val((parseInt( $('#number-product').val())+1).toString());
+        }
+        function  clickSize(id){
+           for(var i = 0;i<4;i++){
+            $('.btn-size')[i].style.background="none"; 
+            $('.btn-size')[i].classList.remove('selected');
+           }
+            $('.btn-size')[id].style.background ='#189eff';
+            $('.btn-size')[id].classList.add('selected');   
+        }
+// source se là id của sản phẩm
+        function clickBuy(id){
+            localStorage.setItem([id, $('.selected').text()],$('#number-product').val());
+            window.location.reload();
+        }
+        function detail(id) {
+            
+            $.ajax({
+                
+                url : "https://api.myjson.com/bins/"+id,
+                method : "GET",
+                dataType : "json",
+                success : function (res){
+                    var flag=0;
+                    var  price=parseInt((res.price)*1.1);
+                    var text=' </div>';
+                    html =`
+                            <div class="container" >
+                                <div class="row">
+                                    <div class="col-sm-6 slide-detail">
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                         `;
+                            res.source.forEach(items => {
+                                html +=
+                                `
+                                <div class="row" style="margin-bottom: 5px;border:1px solid black;"><img src="${items}" onclick="clickImg('${items}')"></div>
+                                `
+                                if(flag===0){ 
+                                    text += ` <div class="col-sm-10 slide-small-detail" style="padding:15px"><img src="${items}" id="img"></div>`;
+                                    flag=1;
+                                }
+                            });
+                            html+=text;
+                           
+                    html+=`
+                                 </div>
+                                </div>
+                                <div class="col-sm-6 infomation-detail" style="left:50px">
+                                    <div class="row" style="margin-bottom:20px">
+                                        <div class="col-sm-12">
+                                            <h2>
+                                                ${res.content}
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4>
+                                                <strong>${res.price},000 VNĐ</strong>
+                                            </h4>
+                                         </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:20px">
+                                        <div class="col-sm-12">
+                                            <h6>
+                                                Giá thị trường : ${price}.000 VNĐ
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:20px">
+                                        <div class="col-sm-12" >
+                                            <h5>
+                                                Chọn size
+                                            </h5>
+                                            <button class="btn-size" onclick="clickSize(0)">S</button><button class="btn-size"  onclick="clickSize(1)">M</button><button class="btn-size"  onclick="clickSize(2)">L</button><button class="btn-size"  onclick="clickSize(3)">XL</button>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:20px">
+                                        <div class="col-sm-12">
+                                            <h5>
+                                                Số lượng
+                                            </h5>
+                                            <button onclick="down()">-</button><input onchange="changeInput()" id="number-product" style="width: 10%;text-align:center" value='1'><button onclick="up()">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:20px;">
+                                        <div class="col-sm-12" >
+                                            <h5>
+                                                <button style="background: #f05d40; border: 1px solid black;"  onclick="clickBuy('${id}')">
+                                                 Thêm vào giỏ hàng
+                                                </button>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        `
+                        $('.content').html(html);
+                },
+                error : (err)=>{
+                    console.log(err)
+                }
+            })
+           
+        }
+    </script>
+    <script src="./index.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

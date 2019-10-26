@@ -9,7 +9,7 @@ body{
 }
 .header{
     width: 100%;
-    background: burlywood;
+    background: white;
     position: absolute;
     z-index: 1000;
     animation: all 0.5s ease;
@@ -52,7 +52,21 @@ body{
     width: 40%;
     text-align: right;
 }
+.list li::after{
+    background: white;
+    display:block;
+    content:"";
+    width:0;
+    height:2px;
+}
 
+.list li:hover::after{
+    width:100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -107,13 +121,13 @@ body{
     height: 0;
 }
 .menu .list ul li:hover .sub-cuahang{
-    opacity: 1;
+    opacity: 0.95;
     height: auto;
     padding: 10px;
 }
 .menu .list ul li:hover .sub-tapchi{
     height: auto;
-    opacity: 1;
+    opacity: 0.95;
     padding: 10px;
 }
 .menu .list .sub-tapchi .item{
@@ -214,7 +228,13 @@ body{
 .wrap-slide .baner{
     display: none;
 }
-.container .row .baner img,.container .row .baner- img{
+.baner-{
+    justify-content: center;
+
+}
+
+.container .row .baner img,.container .row .baner- img,
+.container-fluid .row.listproduct img,.container .product img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -346,6 +366,16 @@ body{
 }
 
 
+/* css of detail */
+.img000::after{
+    content: "";
+    display: block;
+}
+.img000::before{
+    content: "";
+    display: block;
+}
+
 
 /* footer */
 .footer{
@@ -386,6 +416,9 @@ body{
 .floatRight{
     float: right;
 }
+
+
+
 
 
 

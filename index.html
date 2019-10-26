@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+
 </head>
 <body>
     <!-- top -->
@@ -20,17 +20,19 @@
             <!-- form search -->
             <div class="title">
                 <form method="GET" class="searchform">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search" style="height:100%">
                     <i class="fas fa-search"></i>
                 </form>
             </div>
             <!-- image -->
-            <a href=""><img src="https://dosi-in.com/wp-content/uploads/2017/08/%EB%8F%84%EC%8B%9C%EC%9D%B8%EB%A1%9C%EA%B3%A0.png" style="width: 100px"></a>
+            <a href="./index.html"><img src="./images/croostech.png" style="width:65px"></a>
             <!-- giỏ hàng -->
             <div class="basket">
                 <span>LOGIN / REGISTER</span>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+                <a href="./cart.html" style="color: black;">
+                     <i class="fas fa-shopping-cart" ></i>
+                </a>
+            </div>  
         </div>
         <div class="menu">
                 <div class="list">
@@ -107,10 +109,10 @@
                 </div>
                 <div class="link-detail">
                     <ul>
-                        <li><i class="fab fa-facebook"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                        <li><i class="fab fa-youtube"></i></li>
-                        <li><i class="fas fa-envelope"></i></li>
+                        <li><a href="https://www.facebook.com/DirtyCoins.VN/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/explore/tags/dosiin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC6FrTFO8C7ssNu-1FM3VlZg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="mailto:levanhoang310799@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </div>
         </div>
@@ -119,9 +121,11 @@
                 <div class="icon-menu-mobile">
                     <i class="fas fa-bars" onclick="toggleMenu()"></i>
                 </div>
-                <a href=""><img src="https://dosi-in.com/wp-content/uploads/2017/08/%EB%8F%84%EC%8B%9C%EC%9D%B8%EB%A1%9C%EA%B3%A0.png" style="width: 100px"></a>
+                <a href=""><img src="./images/croostech.png" style="width:65px"></a>
                 <div class="basket">
-                    <i class="fas fa-shopping-cart"></i>
+                    <a href="./cart.html" style="color: black;">
+                      <i class="fas fa-shopping-cart"></i>
+                    </a>
                 </div>
                 <div class="menu-mobile">
                     <!-- dat chieu cao cho wrap bao boc  -->
@@ -212,10 +216,10 @@
                     </div>
                     <div class="link-detail" style="background: black;text-align: center;margin-bottom: 40px;clear: both;">
                         <ul>
-                            <li><i class="fab fa-facebook"></i></li>
-                            <li><i class="fab fa-instagram"></i></li>
-                            <li><i class="fab fa-youtube"></i></li>
-                            <li><i class="fas fa-envelope"></i></li>
+                            <li><a href="https://www.facebook.com/DirtyCoins.VN/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/explore/tags/dosiin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC6FrTFO8C7ssNu-1FM3VlZg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="mailto:levanhoang310799@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -304,12 +308,12 @@
                     <h3 style="border-bottom:2px solid black;padding:10px">
                         <i class="far fa-star"></i>
                         SẢN PHẨM HOT
-                    </h3>
+                    </h3>   
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-3" >
-                    <div class="baner-">
-                        <a href="#">
-                            <img src="./images/item_1.jpg">
+                    <div class="baner- row" >
+                        <a  href="detail.html" style="width: 100%;">
+                            <img src="./images/tshirt.jpg">
                         </a>
                     </div>
                 </div>
@@ -319,13 +323,13 @@
                             <div class="wrap-">
                                 <div class="wrap-detail" >
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:0%">
-                                        <div >
-                                            <div>
-                                                <img src="./images//t-shirt/hot-1.jpg">
+                                        <div>
+                                            <div class="col-12">
+                                                <img src="./images/detail/1/1.jpg" onclick="productDetail('a02fw')">
                                             </div>
                                         </div>
                                         <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -334,12 +338,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:20%">
                                         <div >
-                                            <div class="col-12">
-                                                    <img src="./images//t-shirt/hot-2.jpg">
+                                            <div class="col-12" style="text-align: center">
+                                                <img src="./images/detail/2/1.jpg" onclick="productDetail('b6xng')">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -348,12 +352,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:40%">
                                             <div >
-                                                    <div class="col-12">
-                                                        <img src="./images//t-shirt/hot-3.jpg">
+                                                    <div class="col-12" style="text-align: center">
+                                                        <img src="./images/detail/3/1.jpg" onclick="productDetail('11e09o')">
                                                     </div>
                                             </div>
                                             <div >
-                                                    <div class="col-12">
+                                                    <div class="col-12" style="text-align: center">
                                                         <span>RICHNESS</span>
                                                         <p>Tshirt</p>
                                                         <strong>350.000</strong>
@@ -362,12 +366,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:60%">
                                         <div >
-                                            <div class="col-12">
-                                                <img src="./images//t-shirt/hot-4.jpg">
+                                            <div class="col-12" style="text-align: center">
+                                                <img src="./images/detail/4/1.jpg" onclick="productDetail('10bfdo')">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -376,12 +380,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:80%">
                                             <div >
-                                                <div class="col-12">
-                                                    <img src="./images//t-shirt/hot-5.jpg">
+                                                <div class="col-12" style="text-align: center">
+                                                    <img src="./images/detail/5/1.jpg" onclick="productDetail('756qk')">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -390,12 +394,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:100%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center" >
                                                     <img src="./images//t-shirt/hot-6.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -404,12 +408,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:120%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-7.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -418,12 +422,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:140%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-8.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -432,12 +436,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:160%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-9.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -446,12 +450,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:180%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-10.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -460,12 +464,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:200%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-11.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -474,12 +478,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:220%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-12.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -488,12 +492,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:240%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-13.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -502,12 +506,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:260%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-14.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -516,12 +520,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:280%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-15.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -554,9 +558,9 @@
                     </h3>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-3" >
-                    <div class="baner-">
-                        <a href="#">
-                            <img src="./images/item_1.jpg">
+                    <div class="baner- row"  >
+                        <a  href="./detail.html" style="width: 100%;">
+                            <img src="./images/manybuy.PNG">
                         </a>
                     </div>
                 </div>
@@ -572,7 +576,7 @@
                                             </div>
                                         </div>
                                         <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -581,12 +585,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:20%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/2.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -595,12 +599,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:40%">
                                             <div >
-                                                    <div class="col-12">
+                                                    <div class="col-12" style="text-align: center">
                                                         <img src="./images/many/3.jpg">
                                                     </div>
                                             </div>
                                             <div >
-                                                    <div class="col-12">
+                                                    <div class="col-12" style="text-align: center">
                                                         <span>RICHNESS</span>
                                                         <p>Tshirt</p>
                                                         <strong>350.000</strong>
@@ -609,12 +613,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:60%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images/many/4.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -623,12 +627,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:80%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/5.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -637,12 +641,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:100%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/6.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -651,12 +655,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:120%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/7.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -665,12 +669,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:140%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/8.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -679,12 +683,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:160%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/9.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -693,12 +697,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:180%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/10.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -707,12 +711,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:200%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images/many/11.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -721,12 +725,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:220%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images/many/12.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -735,12 +739,12 @@
                                     </div>
                                      <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:240%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images/many/13.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -749,12 +753,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:260%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images/many/14.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -763,12 +767,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:280%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images/many/15.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -787,7 +791,7 @@
                     </button>
                 </div>
                 <div class="col-sm-12 col-lg-12"  style="text-align: center;margin: 30px;" >
-                    <a href="#" class="xemthem">
+                    <a href="#" class="xemthem" >
                         <span>XEM THÊM</span>
                     </a>
                 </div>
@@ -801,9 +805,9 @@
                     </h3>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-3" >
-                    <div class="baner-">
-                        <a href="#">
-                            <img src="./images/item_1.jpg">
+                    <div class="baner- row"  >
+                        <a href="./detail.html" style="width: 100%;">
+                            <img src="./images/newProduct.jpg">
                         </a>
                     </div>
                 </div>
@@ -819,7 +823,7 @@
                                             </div>
                                         </div>
                                         <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -828,12 +832,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:20%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-2.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -842,12 +846,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:40%">
                                             <div >
-                                                    <div class="col-12">
+                                                    <div class="col-12" style="text-align: center">
                                                         <img src="./images//t-shirt/hot-3.jpg">
                                                     </div>
                                             </div>
                                             <div >
-                                                    <div class="col-12">
+                                                    <div class="col-12" style="text-align: center">
                                                         <span>RICHNESS</span>
                                                         <p>Tshirt</p>
                                                         <strong>350.000</strong>
@@ -856,12 +860,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:60%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-4.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -870,12 +874,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:80%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-5.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -884,12 +888,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:100%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-6.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -898,12 +902,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:120%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-7.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -912,12 +916,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:140%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-8.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -926,12 +930,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:160%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-9.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -940,12 +944,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:180%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-10.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -954,12 +958,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:200%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-11.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -968,12 +972,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:220%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-12.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -982,12 +986,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:240%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-10.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -996,12 +1000,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:260%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-11.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1010,12 +1014,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:280%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-12.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1043,14 +1047,14 @@
             <div class="row">
                 <div class="col-sm-12 col-lg-12">
                     <h3 style="border-bottom:2px solid black;padding:10px">
-                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i> 
                         SẢN PHẨM NỔI BẬC
                     </h3>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-3" >
-                    <div class="baner-">
-                        <a href="#">
-                            <img src="./images/item_1.jpg">
+                    <div class="baner- row" >
+                        <a href="./detail.html" style="width: 100%;">
+                            <img src="./images/Top1.jpg">
                         </a>
                     </div>
                 </div>
@@ -1066,7 +1070,7 @@
                                             </div>
                                         </div>
                                         <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1075,12 +1079,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:20%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-2.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1089,12 +1093,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:40%">
                                             <div >
-                                                    <div class="col-12">
+                                                    <div class="col-12" style="text-align: center">
                                                         <img src="./images//t-shirt/hot-3.jpg">
                                                     </div>
                                             </div>
                                             <div >
-                                                    <div class="col-12">
+                                                    <div class="col-12" style="text-align: center">
                                                         <span>RICHNESS</span>
                                                         <p>Tshirt</p>
                                                         <strong>350.000</strong>
@@ -1103,12 +1107,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:60%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-4.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1117,12 +1121,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:80%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-5.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1131,12 +1135,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:100%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-6.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1145,12 +1149,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:120%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-7.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1159,12 +1163,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:140%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-8.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1173,12 +1177,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:160%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-9.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1187,12 +1191,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:180%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-10.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1201,12 +1205,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:200%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-11.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1215,12 +1219,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:220%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-12.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1229,12 +1233,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:240%">
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <img src="./images//t-shirt/hot-10.jpg">
                                                 </div>
                                             </div>
                                             <div >
-                                                <div class="col-12">
+                                                <div class="col-12" style="text-align: center">
                                                     <span>RICHNESS</span>
                                                     <p>Tshirt</p>
                                                     <strong>350.000</strong>
@@ -1243,12 +1247,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:260%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-11.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1257,12 +1261,12 @@
                                     </div>
                                     <div class="col-6 col-xs-6 col-sm-6 col-md-3 product" style="position: absolute;left:280%">
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <img src="./images//t-shirt/hot-12.jpg">
                                             </div>
                                         </div>
                                         <div >
-                                            <div class="col-12">
+                                            <div class="col-12" style="text-align: center">
                                                 <span>RICHNESS</span>
                                                 <p>Tshirt</p>
                                                 <strong>350.000</strong>
@@ -1273,10 +1277,10 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button-pre-product" onclick="preProduct(2)" >
+                    <button class="button-pre-product" onclick="preProduct(3)" >
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button class="button-next-product" onclick="nextProduct(2)" >
+                    <button class="button-next-product" onclick="nextProduct(3)" >
                        <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
@@ -1312,12 +1316,153 @@
             </div>
         </div>
     </section>
-    <script src="./index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+
+   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+
+    
+      
+        <script>
+                function clickImg(id){
+                    document.getElementById('img').src=id;
+                }
+        
+                function changeInput(){
+                    if( parseInt($('#number-product').val()) < 1 || parseInt($('#number-product').val()) ==='null')
+                    {
+                        alert("Số lượng không thể nhỏ hơn 1 và không thể là chữ.");
+                        $('#number-product').val(1);
+                    }
+                }
+                function down(){
+                    if(parseInt($('#number-product').val()) < 2)
+                    {
+                        alert("Số lượng không thể nhỏ hơn 1");
+                    }
+                    else{
+                        $('#number-product').val((parseInt( $('#number-product').val())-1).toString());
+                    }
+                }
+                function up(){
+                    $('#number-product').val((parseInt( $('#number-product').val())+1).toString());
+                }
+                function  clickSize(id){
+                   for(var i = 0;i<4;i++){
+                    $('.btn-size')[i].style.background="none"; 
+                    $('.btn-size')[i].classList.remove('selected');
+                   }
+                    $('.btn-size')[id].style.background ='#189eff';
+                    $('.btn-size')[id].classList.add('selected');   
+                }
+        // source se là id của sản phẩm
+                function clickBuy(id){
+                    localStorage.setItem([id, $('.selected').text()],$('#number-product').val());
+                    window.location = 'file:///C:/Users/HOANG%20IT7/Desktop/WebSizehoang-master/WebSizehoang-master/detail.html';
+                }
+                function   productDetail(id) {
+                    
+                    $.ajax({
+                        
+                        url : "https://api.myjson.com/bins/"+id,
+                        method : "GET",
+                        dataType : "json",
+                        success : function (res){
+                            var flag=0;
+                            var  price=parseInt((res.price)*1.1);
+                            var text=' </div>';
+                            html =`
+                                    <div class="container" >
+                                        <div class="row">
+                                            <div class="col-sm-6 slide-detail">
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                 `;
+                                    res.source.forEach(items => {
+                                        html +=
+                                        `
+                                        <div class="row" style="margin-bottom: 5px;border:1px solid black;"><img src="${items}" onclick="clickImg('${items}')"></div>
+                                        `
+                                        if(flag===0){ 
+                                            text += ` <div class="col-sm-10 slide-small-detail" style="padding:15px"><img src="${items}" id="img"></div>`;
+                                            flag=1;
+                                        }
+                                    });
+                                    html+=text;
+                                   
+                            html+=`
+                                         </div>
+                                        </div>
+                                        <div class="col-sm-6 infomation-detail" style="left:50px">
+                                            <div class="row" style="margin-bottom:20px">
+                                                <div class="col-sm-12">
+                                                    <h2>
+                                                        ${res.content}
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12" >
+                                                    <h4>
+                                                        <strong>${res.price},000 VNĐ</strong>
+                                                    </h4>
+                                                 </div>
+                                            </div>
+                                            <div class="row" style="margin-bottom:20px">
+                                                <div class="col-sm-12">
+                                                    <h6>
+                                                        Giá thị trường : ${price}.000 VNĐ
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-bottom:20px">
+                                                <div class="col-sm-12" >
+                                                    <h5>
+                                                        Chọn size
+                                                    </h5>
+                                                    <button class="btn-size" onclick="clickSize(0)">S</button><button class="btn-size"  onclick="clickSize(1)">M</button><button class="btn-size"  onclick="clickSize(2)">L</button><button class="btn-size"  onclick="clickSize(3)">XL</button>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-bottom:20px">
+                                                <div class="col-sm-12">
+                                                    <h5>
+                                                        Số lượng
+                                                    </h5>
+                                                    <button onclick="down()">-</button><input onchange="changeInput()" id="number-product" style="width: 10%;text-align:center" value='1'><button onclick="up()">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-bottom:20px;">
+                                                <div class="col-sm-12" >
+                                                    <h5>
+                                                        <button style="background: #f05d40; border: 1px solid black;"  onclick="clickBuy('${id}')">
+                                                         Thêm vào giỏ hàng
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                `
+                                $('.content').html(html);
+                        },
+                        error : (err)=>{
+                            console.log(err)
+                        }
+                    })
+                   
+                }
+            </script>
+
 </body>
 </html>

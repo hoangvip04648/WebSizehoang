@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LÊ VĂN HOÀNG</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css//responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+       
+</head>
+<body>
+    <!-- top -->
+    <section class="header" id="header">
+        <div class="containers destop">
+            <!-- form search -->
+            <div class="title">
+                <form method="GET" class="searchform">
+                    <input type="text" placeholder="Search" style="height:100%">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+            <!-- image -->
+            <a href="./index.html"><img src="./images/croostech.png" style="width:65px"></a>
+            <!-- giỏ hàng -->
+            <div class="basket">
+                <span>LOGIN / REGISTER</span>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+        <div class="menu">
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#">TẠP CHÍ   <i class="fas fa-angle-down"></i></a>
+                            <div class="sub-tapchi sub">
+                                <div class="item">
+                                    <strong>THỜI TRANG</strong>
+                                    <hr>
+                                    <P>TIN TỨC THỜI TRANG</P>
+                                    <hr>
+                                    <p>PHONG CÁCH</p>
+                                    <hr>
+                                    <p >STYLE SNAP</p>
+                                    <hr>
+                                    <p>STREET SNAP</p>
+        
+                                </div>
+                                <div class="item">
+                                    <strong>SNEAKER</strong>
+                                    <hr>
+                                    <p>TIN TỨC SNEAKER</p>
+                                </div>
+                                <div class="item">
+                                    <strong>VĂN HÓA</strong>
+                                    <hr>
+                                    <p>CỘNG ĐỒNG</p>
+                                    <hr>
+                                    <p>SỰ KIỆN</p>
+                                    <hr>
+                                    <p>GIẢI TRÍ</p>
+                                </div>
+                                <div class="item">
+                                    <strong>NHÃN HÀNG</strong>
+                                    <hr>
+                                    <p>TIN TỨC </p>
+                                    <hr>
+                                    <p>SẢN PHẨM </p>
+                                    <hr>
+                                    <p>COLLAB</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">HÀNG MỚI VỀ</a>
+                        </li>
+                        <li>
+                            <a href="#" >CỬA HÀNG   <i class="fas fa-angle-down"></i></a>
+                            <div class="sub-cuahang sub">
+                                <div class="item">
+                                    <p>ÁO KHOÁC</p>
+                                    <hr>
+                                    <p>ÁO</p>
+                                    <hr>
+                                    <p>QUẦN</p>
+                                    <hr>
+                                    <p>GIÀY</p>
+                                    <hr>
+                                    <p>PHỤ KIỆN</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">THƯƠNG HIỆU</a>
+                        </li>
+                        <li>
+                            <a href="#">GIẢM GIÁ</a>
+                        </li>
+                        <li>
+                            <a href="#">BÁN CHẠY</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-detail">
+                    <ul>
+                        <li><a href="https://www.facebook.com/DirtyCoins.VN/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/explore/tags/dosiin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC6FrTFO8C7ssNu-1FM3VlZg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="mailto:levanhoang310799@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="header-mobile">
+            <div class="containers mobile">
+                <div class="icon-menu-mobile">
+                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                </div>
+                <a href="./index.html"><img src="./images/croostech.png" style="width:65px"></a>
+                <div class="basket">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="menu-mobile">
+                    <!-- dat chieu cao cho wrap bao boc  -->
+                    <div style="height: calc(100vh - 110px)">
+                        <div class="left-menu">
+                            <form method="GET" class="searchform">
+                                <input type="text" placeholder="Search">
+                                <i class="fas fa-search"></i>
+                            </form>
+                            <div class="list-menu-mobile">
+                                <ul style="padding: 0">
+                                    <li>
+                                        <div >
+                                            <div style="width: 80%;display:inline-block;text-align:left;"><strong>TẠP CHÍ </strong></div>
+                                            <i class="fas fa-angle-down" onclick="toggleMobileMenu()"></i>
+                                            <div class="item-menu-mobile tapchi">
+                                                <strong>THỜI TRANG</strong>
+                                                <div style="padding:15px;">
+                                                    <p>TIN TỨC THỜI TRANG</p>
+                                                    <hr>
+                                                    <p>PHONG CÁCH</p>
+                                                    <hr>
+                                                    <p >STYLE SNAP</p>
+                                                    <hr>
+                                                    <p>STREET SNAP</p>
+                                                </div>
+                                                <strong>SNEAKER</strong>
+                                                <div style="padding:15px;">
+                                                    <p>TIN TỨC SNEAKER</p>
+                                                </div>                           
+                                                <strong>VĂN HÓA</strong>
+                                                <div style="padding:15px;">
+                                                    <p>CỘNG ĐỒNG</p>
+                                                    <hr>
+                                                    <p>SỰ KIỆN</p>
+                                                    <hr>
+                                                    <p>GIẢI TRÍ</p>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div style="width: 80%;display:inline-block;text-align:left;">
+                                                <strong>HÀNG MỚI VỀ </strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong>  CỬA HÀNG   </strong>
+                                        </div>
+                                        <i class="fas fa-angle-down" onclick="toggleMobileMenu1()"></i>
+                                        <div class="item-menu-mobile cuahang">
+                                            <div style="padding:15px;">
+                                                <p>ÁO KHOÁC</p>
+                                                <hr>
+                                                <p>ÁO</p>
+                                                <hr>
+                                                <p>QUẦN</p>
+                                                <hr>
+                                                <p>GIÀY</p>
+                                                <hr>
+                                                <p>PHỤ KIỆN</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong>THƯƠNG HIỆU</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong>GIẢM GIÁ</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="width: 80%;display:inline-block;text-align:left;">
+                                            <strong>BÁN CHẠY</strong>
+                                        </div>
+                                    </li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="right-menu">
+                            <button style="font-size:20px;color:black;" onclick="closemenumobile()"><i class="fas fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="link-detail" style="background: black;text-align: center;margin-bottom: 40px;clear: both;">
+                        <ul>
+                            <li><a href="https://www.facebook.com/DirtyCoins.VN/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/explore/tags/dosiin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC6FrTFO8C7ssNu-1FM3VlZg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="mailto:levanhoang310799@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content -->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-xs-12 col-md-8">
+                    <div class="row">
+                            <div class="card shadow col-sm-12">
+                                    <div class="card-body">
+                                      <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                          <thead>
+                                            <tr>
+                                              <th>Tên sản phẩm</th>
+                                              <th class="note">Size</th>
+                                              <th class="note">Giá</th>
+                                              <th class="note">Số lượng</th>
+                                              <th></th>
+                                            </tr>
+                                          </thead>
+                                          <tbody id="listCategory">
+                                              
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 col-md-4 pay">
+                        <div class="row">
+                                <div class="col">
+                                   <h2> Thành tiền : 0</h2>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fotter -->
+    <section class="footer">
+        <div class="icon-paymen">
+            <i class="fab fa-cc-visa" style="font-size: 40px;"></i>
+            <i class="fab fa-cc-mastercard" style="font-size: 40px;"></i>
+        </div>
+        <div class="link-page">
+                <ul>
+                    <li>VỀ CHÚNG TÔI</li>
+                    <li>CHÍNH SÁCH MUA HÀNG</li>
+                    <li>BÁN HÀNG CÙNG DOSSIIN</li>
+                </ul>
+        </div>
+        <div class="adddress">
+            <p>Copyright 2019 © <strong style="font-size: 20.8px">Dosi-in.com</strong> | Designed by KLOZEUP</p>
+            <br>
+            <p>· Công Ty: CÔNG TY TNHH DOSIIN</p>
+            <br>
+            <address>
+                · <strong>Trụ sở chính : 76 Nguyễn Trường Tộ, P12, Q4, TPHCM.</strong>
+                · <strong>Điện thoại : 0939 950 353</strong>                 
+                · <strong>Mã số thuế : 0314119937</strong>    
+            </address>  
+        </div>
+    </section>
+<script src="./index.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+<script>
+    function deleteproduct(id){
+        localStorage.removeItem(id);
+        window.location.reload();
+    }
+    function deleteLocalStorage(){
+        localStorage.clear();
+        window.location.replace('file:///C:/Users/HOANG%20IT7/Desktop/WebSizehoang-master/WebSizehoang-master/index.html')
+    }
+    $('document').ready(function(){
+        var html = "";//text html cho list product
+        var pay = "";//text html cho pay
+        var sum=0;//tong tiền
+        var numberproduct=[];
+        var id=[];
+        var size = [];
+        var flag=0;
+        for(var i = 0 ; i< localStorage.length;i++){
+            id.push((localStorage.key(i).split([',']))[0]);
+            size.push((localStorage.key(i).split([',']))[1])
+            numberproduct.push(localStorage.getItem(localStorage.key(i)));
+        };
+
+        for (var j=0 ; j < id.length ; j++){
+            $.ajax({
+            url : 'https://api.myjson.com/bins/'+id[j],
+            method : "GET",
+            success : function(res){
+                html += `
+                        <tr>
+                            <td >${res.content}</td>
+                            <td class="note">${size[flag]}</td>
+                            <td class="note">${res.price}.000</td>
+                            <td class="note">${numberproduct[flag]}</td>
+                            <td ><button class="btn btn-primary" onclick="deleteproduct('${id[flag]},${size[flag]}')" >Xóa</button></td> 
+                        </tr>
+                     `
+             
+                if(flag<id.length){ sum+=parseInt(res.price*1000*numberproduct[flag]);console.log(sum)};
+                if(flag===id.length-1){pay+=`
+                    <div class="row">
+                       <div class="col">
+                          <h2> Thành tiền : ${sum}</h2>
+                       </div>
+                   </div>
+                   <div class="row">
+                        <div class="col">
+                                <button class="btn btn-primary" onclick="deleteLocalStorage()">Thanh toán</button>
+                        </div>
+                    </div>
+                   `}
+                   $('.pay').html(pay);
+                
+                $('#listCategory').html(html);
+                flag++;
+            },
+            error: (err)=>{
+                console.log(err);
+            }
+           
+         })
+        }
+        flag=0;
+    })
+
+</script>
+</body>
+</html>
