@@ -1,10 +1,13 @@
 .content{
-    top:80px !important;
+    top:80 !important;
 }
 
 @media (max-width :991px ){
     .content{
-        top :80px !important;
+        top :66px !important;
+    }
+    .basket,.icon-menu-mobile{
+        width:45%!important;
     }
 }
 @media (min-width:992px){
